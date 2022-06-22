@@ -1,0 +1,19 @@
+{
+    "name": "yuanxinhealthy/json-rpc-test",
+    "description": "json-rpc-test",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "YuanxinHealthy\\JsonRpcTest\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {},
+    "extra": {
+        "hyperf": {
+            "config": "YuanxinHealthy\\JsonRpcTest\\ConfigProvider"
+        }
+    }
+}
