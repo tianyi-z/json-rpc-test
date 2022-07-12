@@ -15,7 +15,7 @@ class ConfigProvider
                         'name' => 'http',
                         'type' => 1,
                         'host' => '0.0.0.0',
-                        'port' => env('RPC_TEST_PORT', 9700),
+                        'port' => intval(env('RPC_TEST_PORT', 9700)),
                         'sock_type' => SWOOLE_SOCK_TCP,
                         'callbacks' => [
                             Event::ON_REQUEST => [\Hyperf\HttpServer\Server::class, 'onRequest'],
